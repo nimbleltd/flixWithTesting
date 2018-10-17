@@ -26,3 +26,6 @@
 <p>
   <%= link_to "All Movies", root_path%>
 </p>
+<p>
+  <%= link_to "Delete Movie", movie_path(@movie), method: :delete, data: {confirm: 'Are your sure?'} %>
+</p>
